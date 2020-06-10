@@ -313,7 +313,7 @@ netMain = None
 metaMain = None
 altNames = None
 
-def performDetect(imagePath="data/dog.jpg", thresh= 0.25, configPath = "./cfg/yolov4.cfg", weightPath = "yolov4.weights", metaPath= "./cfg/coco.data", showImage= True, makeImageOnly = False, initOnly= False):
+def performDetect(imagePath="custom_data/vlcsnap-2020-02-20-14h15m39s648.png", thresh= 0.25, configPath = "./cfg/yolov4.cfg", weightPath = "yolov4.weights", metaPath= "./cfg/coco.data", showImage= True, makeImageOnly = False, initOnly= False):
     """
     Convenience function to handle the detection and returns of objects.
 
@@ -461,7 +461,7 @@ def performBatchDetect(thresh= 0.25, configPath = "./cfg/yolov4.cfg", weightPath
     import numpy as np
     # NB! Image sizes should be the same
     # You can change the images, yet, be sure that they have the same width and height
-    img_samples = ['data/person.jpg', 'data/person.jpg', 'data/person.jpg']
+    img_samples = ['custom_data/vlcsnap-2020-02-20-14h15m39s648.png', 'custom_data/vlcsnap-2020-02-20-14h15m39s648.png', 'custom_data/vlcsnap-2020-02-20-14h15m39s648.png']
     image_list = [cv2.imread(k) for k in img_samples]
 
     net = load_net_custom(configPath.encode('utf-8'), weightPath.encode('utf-8'), 0, batch_size)
