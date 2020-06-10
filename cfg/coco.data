@@ -1,7 +1,7 @@
 classes=1
 train=/home/ssapl/Desktop/darknet/custom_data/train.txt
 valid=/home/ssapl/Desktop/darknet/custom_data/valid.txt
-names=/home/ssapl/Desktop/darknet/custom_data/custom.names
-backup=/home/ssapl/Desktop/darknet/backup
+names=data/coco.names
+backup=darknet/backup
 eval=coco
 
